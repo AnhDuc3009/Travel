@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Travel Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="../../css/animate.css">
+
+  <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../../css/magnific-popup.css">
+
+  <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="../../css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="../../css/flaticon.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <img src="../../images/Logo2.png" class="navbar-brand img-logo" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="../../index.html" class="nav-link" style="color: black">Home</a></li>
+          <li class="nav-item"><a href="../../about.html" class="nav-link" style="color: black">About</a></li>
+          <li class="nav-item active"><a href="../../destination.html" class="nav-link">Destination</a></li>
+          <li class="nav-item"><a href="../../hotel.html" class="nav-link" style="color: black">Hotel</a></li>
+          <li class="nav-item"><a href="../../blog.html" class="nav-link" style="color: black">Blog</a></li>
+          <li class="nav-item"><a href="../../contact.html" class="nav-link" style="color: black">Contact</a></li>
+          <li class="nav-item"><a href="" class="nav-link" style="color: black">Đăng nhập</a></li>
+          <li class="nav-item"><a href="" class="nav-link" style="color: black">Đăng ký</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+
+
+  <div class="hero-wrap js-fullheight" style="background-image: url('../../images/VN.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+        <div class="col-md-9 ftco-animate">
+          <span class="subheading" style="font-size: 50px; font-weight: 500">Du lịch Việt Nam</span>
+          <p> Việt Nam luôn là lựa chọn tuyệt vời. Đường bờ biển dài hơn 3260km, những khu bảo tồn thiên nhiên
+            tuyệt vời, những thành phố nhộn nhịp, những di tích lịch sử hào hùng, nền văn hóa độc đáo và hấp dẫn, cùng
+            một danh sách dài những món ăn ngon nhất thế giới, Việt Nam có tất cả những điều đó.</p>
+          <!-- <p class="caps">Travel to the any corner of the world, without going around in circles</p> -->
+        </div>
+        <a href="https://www.youtube.com/watch?v=Au6LqK1UH8g"
+          class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+          <span class="fa fa-play"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="ftco-section ftco-no-pb ftco-no-pt">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftco-search d-flex justify-content-center">
+            <div class="row">
+              <div class="col-md-12 nav-link-wrap">
+                <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+                    aria-controls="v-pills-1" aria-selected="true">Tìm Tour</a>
+
+                  <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                    aria-controls="v-pills-2" aria-selected="false">Khách sạn</a>
+
+                </div>
+              </div>
+              <div class="col-md-12 tab-wrap">
+
+                <div class="tab-content" id="v-pills-tabContent">
+
+                  <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                    aria-labelledby="v-pills-nextgen-tab">
+                    <form action="#" class="search-property-1">
+                      <div class="row no-gutters">
+                        <div class="col-md d-flex">
+                          <div class="form-group p-4 border-0">
+                            <label for="#">Điểm đến</label>
+                            <div class="form-field">
+                              <div class="icon"><span class="fa fa-search"></span></div>
+                              <input type="text" class="form-control" placeholder="Điểm đến">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md d-flex">
+                          <div class="form-group p-4">
+                            <label for="#">Ngày check-in</label>
+                            <div class="form-field">
+                              <div class="icon"><span class="fa fa-calendar"></span></div>
+                              <input type="text" class="form-control checkin_date" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md d-flex">
+                          <div class="form-group p-4">
+                            <label for="#">Ngày check-out</label>
+                            <div class="form-field">
+                              <div class="icon"><span class="fa fa-calendar"></span></div>
+                              <input type="text" class="form-control checkout_date" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md d-flex">
+                          <div class="form-group p-4">
+                            <label for="#">Giá giới hạn</label>
+                            <div class="form-field">
+                              <div class="select-wrap">
+                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                <select name="" id="" class="form-control">
+                                  <option value="">2.000.000 VND</option>
+                                  <option value="">5.000.000 VND</option>
+                                  <option value="">10.000.000 VND</option>
+                                  <option value="">15.000.000 VND</option>
+                                  <option value="">20.000.000 VND</option>
+                                  <option value="">25.000.000 VND</option>
+                                  <option value="">30.000.000 VND</option>
+                                  <option value="">35.000.000 VND</option>
+                                  <option value="">40.000.000 VND</option>
+                                  <option value="">45.000.000 VND</option>
+                                  <option value="">50.000.000 VND</option>
+                                  <option value="">55.000.000 VND</option>
+                                  <option value="">60.000.000 VND</option>
+                                  <option value="">100.000.000 VND</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md d-flex">
+                          <div class="form-group d-flex w-100 border-0">
+                            <div class="form-field w-100 align-items-center d-flex">
+                              <input type="submit" value="Tìm kiếm"
+                                class="align-self-stretch form-control btn btn-primary">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+                    <form action="#" class="search-property-1">
+                      <div class="row no-gutters">
+                        <div class="col-lg d-flex">
+                          <div class="form-group p-4 border-0">
+                            <label for="#">Điểm đến</label>
+                            <div class="form-field">
+                              <div class="icon"><span class="fa fa-search"></span></div>
+                              <input type="text" class="form-control" placeholder="Điểm đến">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg d-flex">
+                          <div class="form-group p-4">
+                            <label for="#">Ngày check-in</label>
+                            <div class="form-field">
+                              <div class="icon"><span class="fa fa-calendar"></span></div>
+                              <input type="text" class="form-control checkin_date" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg d-flex">
+                          <div class="form-group p-4">
+                            <label for="#">Ngày check-out</label>
+                            <div class="form-field">
+                              <div class="icon"><span class="fa fa-calendar"></span></div>
+                              <input type="text" class="form-control checkout_date" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg d-flex">
+                          <div class="form-group p-4">
+                            <label for="#">Giá giới hạn</label>
+                            <div class="form-field">
+                              <div class="select-wrap">
+                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                <select name="" id="" class="form-control">
+                                  <option value="">2.000.000 VND</option>
+                                  <option value="">5.000.000 VND</option>
+                                  <option value="">10.000.000 VND</option>
+                                  <option value="">15.000.000 VND</option>
+                                  <option value="">20.000.000 VND</option>
+                                  <option value="">25.000.000 VND</option>
+                                  <option value="">30.000.000 VND</option>
+                                  <option value="">35.000.000 VND</option>
+                                  <option value="">40.000.000 VND</option>
+                                  <option value="">45.000.000 VND</option>
+                                  <option value="">50.000.000 VND</option>
+                                  <option value="">55.000.000 VND</option>
+                                  <option value="">60.000.000 VND</option>
+                                  <option value="">100.000.000 VND</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg d-flex">
+                          <div class="form-group d-flex w-100 border-0">
+                            <div class="form-field w-100 align-items-center d-flex">
+                              <input type="submit" value="Tìm kiếm"
+                                class="align-self-stretch form-control btn btn-primary p-0">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="container">
+    <div class="breadcrumbs mt-4 ftco-animate" style="font-size: 20px; font-weight: 500">
+      <p><a href="../../index.html">Destination</a> / Du lịch Việt Nam</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row ftco-animate">
+      <div class="col-md-3">
+        <div class="row">
+          <div class="panel-group">
+            <div class="panel panel-default col-md-12" style="margin-bottom: 40px">
+              <div class="panel-heading" style="background-color:beige; padding: 10px 5px; border:ridge">
+                <h6 style="margin-bottom:0">Địa điểm hot nước ngoài</h6>
+              </div>
+              <div class="panel-collage">
+                <div class="panel-body" style="border:ridge">
+                  <div class="row">
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Singapo</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Thái Lan</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Châu Âu</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Thụy Sỹ</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Hàn Quốc</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Dubai</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Indonesia</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Campuchia</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="panel-group">
+            <div class="panel panel-default col-md-12" style="margin-bottom: 40px">
+              <div class="panel-heading" style="background-color:beige; padding: 10px 5px; border:ridge">
+                <h6 style="margin-bottom:0">Địa điểm hot trong nước</h6>
+              </div>
+              <div class="panel-collage">
+                <div class="panel-body" style="border:ridge">
+                  <div class="row">
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Singapo</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Thái Lan</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Châu Âu</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Thụy Sỹ</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Hàn Quốc</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Dubai</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Indonesia</a>
+                    </div>
+                    <div class="col-md-12" style="padding: 4px 40px">
+                      <a href="" style="color: black">Campuchia</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-6">
+            <p style="color: black">Chúng tôi tìm thấy <b>20</b> tours cho Quý khách.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="text-align: right;">Sắp xếp theo</p>
+          </div>
+          <div class="col-md-3">
+            <select>
+              <option value="0" class="active ">Tour nổi bật</option>
+              <option value="14">Giá tour tăng dần</option>
+              <option value="98">Giá tour giảm dần</option>
+              <option value="169">Tour mới nhất</option>
+              <option value="170">Tour bán chạy nhất</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row ftco-animate"
+            style="box-shadow: 1px 1px 5px 2px rgba(0,0,0,.2); margin-left: 10px; margin-bottom: 20px">
+            <div class="col-md-3" style="margin-top: 10px">
+              <div class="item active ">
+                <div class="view hm-zoom ">
+                  <a href="../ChiTietTour/VN1.html"><img src="../../images/bg_1.jpg" style="width: 190px; height: 160px" alt="slide1"
+                      data-wow-duration="1s" data-wow-offset="10">
+                    <div class="mask waves-effect waves-light"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5" style="padding: 0px; margin-top: 10px">
+                <a href="../ChiTietTour/VN1.html" style="font-size: 18px; line-height: 22px; color: black"><b>Du Lịch Tây Nguyên: Hà Nội -
+                    Buôn Ma Thuột
+                    - Pleiku - Kon Tum 4 Ngày + Bay Bamboo Airways </b></a>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Khởi hành</span>: Hà Nội</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Thời gian</span>: 4 ngày 3 đêm</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Ngày đi</span>: Hàng tuần</div>
+            </div>
+            <div class="col-md-4 text-right">
+              <div style="font-size: 16px; margin-top: 10px">Giá 1 khách</div>
+              <div class="giaKM" style="margin-top: 8px">
+                <strike style="font-size: 16px"">6,590,000đ</strike>
+                  <span style=" color: white; background-color: orange; padding: 2px; border-radius: 2px; font-size:
+                  16px">-24%</span>
+              </div>
+              <div class="price-tour" style="margin: 8px 0">4,990,000đ</div>
+              <a href="" style="padding: 8px 48px; background-color: red; color: white">Chi tiết ></a>
+            </div>
+          </div>
+          <div class="row ftco-animate"
+            style="box-shadow: 1px 1px 5px 2px rgba(0,0,0,.2); margin-left: 10px; margin-bottom: 20px">
+            <div class="col-md-3" style="margin-top: 10px">
+              <div class="item active">
+                <div class="view hm-zoom">
+                  <a href=""><img src="../../images/bg_1.jpg" style="width: 190px; height: 160px" alt="slide1"
+                      data-wow-duration="1s" data-wow-offset="10">
+                    <div class="mask waves-effect waves-light"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5" style="padding: 0px; margin-top: 10px">
+                <a href="" style="font-size: 18px; line-height: 22px; color: black" class="under black-text"><b>Du Lịch Tây
+                    Nguyên: Hà Nội -
+                    Buôn Ma Thuột
+                    - Pleiku - Kon Tum 4 Ngày + Bay Bamboo Airways </b></a>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Khởi hành</span>: Hà Nội</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Thời gian</span>: 4 ngày 3 đêm</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Ngày đi</span>: Hàng tuần</div>
+            </div>
+            <div class="col-md-4 text-right">
+              <div style="font-size: 16px; margin-top: 10px">Giá 1 khách</div>
+              <div class="giaKM" style="margin-top: 8px">
+                <strike style="font-size: 16px"">6,590,000đ</strike>
+                  <span style=" color: white; background-color: orange; padding: 2px; border-radius: 2px; font-size:
+                  16px">-24%</span>
+              </div>
+              <div class="price-tour" style="margin: 8px 0">4,990,000đ</div>
+              <a href="" style="padding: 8px 48px; background-color: red; color: white">Chi tiết ></a>
+            </div>
+          </div>
+          <div class="row ftco-animate"
+            style="box-shadow: 1px 1px 5px 2px rgba(0,0,0,.2); margin-left: 10px; margin-bottom: 20px">
+            <div class="col-md-3" style="margin-top: 10px">
+              <div class="item active">
+                <div class="view hm-zoom">
+                  <a href=""><img src="../../images/bg_1.jpg" style="width: 190px; height: 160px" alt="slide1"
+                      data-wow-duration="1s" data-wow-offset="10">
+                    <div class="mask waves-effect waves-light"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5" style="padding: 0px; margin-top: 10px">
+                <a href="" style="font-size: 18px; line-height: 22px; color: black" class="under black-text"><b>Du Lịch Tây
+                    Nguyên: Hà Nội -
+                    Buôn Ma Thuột
+                    - Pleiku - Kon Tum 4 Ngày + Bay Bamboo Airways </b></a>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Khởi hành</span>: Hà Nội</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Thời gian</span>: 4 ngày 3 đêm</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Ngày đi</span>: Hàng tuần</div>
+            </div>
+            <div class="col-md-4 text-right">
+              <div style="font-size: 16px; margin-top: 10px">Giá 1 khách</div>
+              <div class="giaKM" style="margin-top: 8px">
+                <strike style="font-size: 16px"">6,590,000đ</strike>
+                  <span style=" color: white; background-color: orange; padding: 2px; border-radius: 2px; font-size:
+                  16px">-24%</span>
+              </div>
+              <div class="price-tour" style="margin: 8px 0">4,990,000đ</div>
+              <a href="" style="padding: 8px 48px; background-color: red; color: white">Chi tiết ></a>
+            </div>
+          </div>
+          <div class="row ftco-animate"
+            style="box-shadow: 1px 1px 5px 2px rgba(0,0,0,.2); margin-left: 10px; margin-bottom: 20px">
+            <div class="col-md-3" style="margin-top: 10px">
+              <div class="item active">
+                <div class="view hm-zoom">
+                  <a href=""><img src="../../images/bg_1.jpg" style="width: 190px; height: 160px" alt="slide1"
+                      data-wow-duration="1s" data-wow-offset="10">
+                    <div class="mask waves-effect waves-light"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5" style="padding: 0px; margin-top: 10px">
+                <a href="" style="font-size: 18px; line-height: 22px; color: black" class="under black-text"><b>Du Lịch Tây
+                    Nguyên: Hà Nội -
+                    Buôn Ma Thuột
+                    - Pleiku - Kon Tum 4 Ngày + Bay Bamboo Airways </b></a>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Khởi hành</span>: Hà Nội</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Thời gian</span>: 4 ngày 3 đêm</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Ngày đi</span>: Hàng tuần</div>
+            </div>
+            <div class="col-md-4 text-right">
+              <div style="font-size: 16px; margin-top: 10px">Giá 1 khách</div>
+              <div class="giaKM" style="margin-top: 8px">
+                <strike style="font-size: 16px"">6,590,000đ</strike>
+                  <span style=" color: white; background-color: orange; padding: 2px; border-radius: 2px; font-size:
+                  16px">-24%</span>
+              </div>
+              <div class="price-tour" style="margin: 8px 0">4,990,000đ</div>
+              <a href="" style="padding: 8px 48px; background-color: red; color: white">Chi tiết ></a>
+            </div>
+          </div>
+          <div class="row ftco-animate"
+            style="box-shadow: 1px 1px 5px 2px rgba(0,0,0,.2); margin-left: 10px; margin-bottom: 20px">
+            <div class="col-md-3" style="margin-top: 10px">
+              <div class="item active">
+                <div class="view hm-zoom">
+                  <a href=""><img src="../../images/bg_1.jpg" style="width: 190px; height: 160px" alt="slide1"
+                      data-wow-duration="1s" data-wow-offset="10">
+                    <div class="mask waves-effect waves-light"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5" style="padding: 0px; margin-top: 10px">
+                <a href="" style="font-size: 18px; line-height: 22px; color: black" class="under black-text"><b>Du Lịch Tây
+                    Nguyên: Hà Nội -
+                    Buôn Ma Thuột
+                    - Pleiku - Kon Tum 4 Ngày + Bay Bamboo Airways </b></a>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Khởi hành</span>: Hà Nội</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Thời gian</span>: 4 ngày 3 đêm</div>
+              <div class="tour-content-sub" style="font-size: 16px"><span>Ngày đi</span>: Hàng tuần</div>
+            </div>
+            <div class="col-md-4 text-right">
+              <div style="font-size: 16px; margin-top: 10px">Giá 1 khách</div>
+              <div class="giaKM" style="margin-top: 8px">
+                <strike style="font-size: 16px"">6,590,000đ</strike>
+                  <span style=" color: white; background-color: orange; padding: 2px; border-radius: 2px; font-size:
+                  16px">-24%</span>
+              </div>
+              <div class="price-tour" style="margin: 8px 0">4,990,000đ</div>
+              <a href="" style="padding: 8px 48px; background-color: red; color: white">Chi tiết ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(../../images/bg_3.jpg);">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Kết nối</h2>
+            <p>Để có những chuyến du lịch tuyệt vời với những trải nghiệm đáng nhớ. Hãy đến với chúng tôi.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5 border-left">
+          <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Thông tin</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Yêu cầu trực tuyến</a></li>
+              <li><a href="#" class="py-2 d-block">Thắc mắc chung</a></li>
+              <li><a href="#" class="py-2 d-block">Điều khoản đặt</a></li>
+              <li><a href="#" class="py-2 d-block">Chính sách và quyền riêng tư</a></li>
+              <li><a href="#" class="py-2 d-block">Chính sách hoàn tiền</a></li>
+              <li><a href="#" class="py-2 d-block">Gọi cho chúng tôi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5 border-left">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Trải nghiệm</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Phiêu lưu</a></li>
+              <li><a href="#" class="py-2 d-block">Khách sạn và nhà hàng</a></li>
+              <li><a href="#" class="py-2 d-block">Bãi biển</a></li>
+              <li><a href="#" class="py-2 d-block">Thiên nhiên</a></li>
+              <li><a href="#" class="py-2 d-block">Cắm trại</a></li>
+              <li><a href="#" class="py-2 d-block">Tiệc tùng</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5 border-left">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Bạn có câu hỏi?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map-marker"></span><span class="text">616 - s9 Học viện kỹ thuật quân sự,
+                    236 Hoàng Quốc Việt, Cổ Nhuể 1, Bắc Từ Liêm, Hà Nội</span></li>
+                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+84 3838 6868</span></a></li>
+                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                      class="text">CacChuBoDoi@gmail.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div> -->
+
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/jquery.easing.1.3.js"></script>
+  <script src="../../js/jquery.waypoints.min.js"></script>
+  <script src="../../js/jquery.stellar.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/jquery.magnific-popup.min.js"></script>
+  <script src="../../js/jquery.animateNumber.min.js"></script>
+  <script src="../../js/bootstrap-datepicker.js"></script>
+  <script src="../../js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="../../js/google-map.js"></script>
+  <script src="../../js/main.js"></script>
+
+</body>
+
+</html>
