@@ -587,7 +587,7 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    /* max-width: 720px; */
   }
 }
 
@@ -14535,4 +14535,22 @@ textarea.form-control {
 
 .text-tour {
   font-size: 20px;
+}
+
+/* Destination -- Tour List */
+.panel-collage .col-md-12 p {
+  margin: 0;
+}
+
+.panel-collage .col-md-12 {
+  display: flex;
+}
+
+.panel-collage .col-md-12 .place__title {
+  margin-left: 8px;
+}
+
+.panel-heading h6 {
+  color: #000;
+  font-weight: 600;
 }
