@@ -45,12 +45,20 @@
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
-                        <ul class="metismenu" id="menu">
-                           
+                        <ul class="metismenu" id="menu"> 
                             <li><a href="admin.html"><i class="fa fa-solid fa-home"></i><span>Dashboard</span></a></li>     
                             <li class="active"><a href="users.html"><i class="fa fa-regular fa-user-secret"></i><span>Users</span></a></li>
                             <li><a href="profile.html"><i class="fa fa-light fa-user"></i><span>My Profile</span></a></li>
                             <li><a href="password.html"><i class=" fa fa-solid fa-key"></i><span>Change Password</span></a></li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Manage Tour</span></a>
+                                <ul class="collapse">
+                                    <li><a href="tour/ListTour.html">List Tour</a></li>
+                                    <li><a href="tour/Tours.html">Manage Tours</a></li>
+                                    <li><a href="tour/Comments.html">Manage Comments</a></li>
+                                    <li><a href="tour/News.html">News</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -270,8 +278,46 @@
                     <div class="col-12 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title">User Management</h4>
-                                <button class="btn btn-primary mb-3">New User</button>
+                                <h4 class="header-title">Quản lý người dùng</h4>
+                                <button type="button" class="btn btn-primary btn-flat btn-md" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 4px;">Tạo mới</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLong">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <form class="m-3">
+                                                <h4 class="header-title mb-3">Thêm người dùng</h4>
+                                                <div class="form-group">
+                                                    <label for="exampleName1">Họ tên</label>
+                                                    <input type="text" class="form-control" id="exampleName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleEmail1">Email</label>
+                                                    <input type="email" class="form-control" id="exampleEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="examplePhone1">Số điện thoại</label>
+                                                    <input type="text" class="form-control" id="examplePhone1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleGender1">Giới tính</label>
+                                                    <input type="text" class="form-control" id="exampleGender1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleGender1">Địa chỉ</label>
+                                                    <input type="text" class="form-control" id="exampleGender1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleGender1">Vai trò</label>
+                                                    <input type="text" class="form-control" id="exampleGender1" value="admin" disabled>
+                                                </div>
+                                            </form>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="search-box pull-right mt-5 mb-3">
                                     <form action="#">
                                         <input type="text" name="search" placeholder="Search..." required>
@@ -284,26 +330,24 @@
                                             <thead class="text-uppercase">
                                                 <tr>
                                                     <th scope="col">ID</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">Birthday</th>
-                                                    <th scope="col">Telephone</th>
+                                                    <th scope="col">Họ Tên</th>
                                                     <th scope="col">Email</th>
-                                                    <th scope="col">Role</th>
-                                                    <th scope="col">Disabled</th>
-                                                    <th scope="col">Actions</th>
+                                                    <th scope="col">Số điện thoại</th>
+                                                    <th scope="col">Giới tính</th>
+                                                    <th scope="col">Địa chỉ</th>
+                                                    <th scope="col">Vai trò</th>
+                                                    <th scope="col">Hành động</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-primary">pending</span></td>
+                                                    <td>Nguyễn Việt Đức</td>
+                                                    <td>vietduc123@gmail.com</td>
+                                                    <td>0945736202</td>
+                                                    <td>Nam</td>
+                                                    <td>Quảng Bình</td>
+                                                    <td>Tổng giám đốc</td>
                                                     <td>
                                                         <ul class="d-flex justify-content-center">
                                                             <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
@@ -311,57 +355,7 @@
                                                         </ul>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-warning">pending</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-success">complate</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>Mark</td>
-                                                    <td>09 / 07 / 2018</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 8px;">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td><span class="status-p bg-warning">panding</span></td>
-                                                    <td>
-                                                        <ul class="d-flex justify-content-center">
-                                                            <li class="mr-3"><a href="#" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a href="#" class="text-danger"><i class="ti-trash"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
+                                              
                                             </tbody>
                                         </table>
                                     </div>
@@ -375,11 +369,11 @@
         </div>
         <!-- main content area end -->
         <!-- footer area start-->
-        <footer>
+        <!-- <footer>
             <div class="footer-area">
                 <p>© Copyright 2018. All right reserved. Template by <a href="https://colorlib.com/wp/">Colorlib</a>.</p>
             </div>
-        </footer>
+        </footer> -->
         <!-- footer area end-->
     </div>
     <!-- page container area end -->
